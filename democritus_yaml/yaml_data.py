@@ -1,17 +1,13 @@
-# -*- coding: utf-8 -*-
+from typing import List, Dict, Any, Union
 
-import os
-import sys
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
-from typings import Json
+Json = Union[List[Any], Dict[Any, Any], str]
 
 # TODO: i think it may be more helpful to name functions like `yaml_read` as `yaml_from_string` or `yaml_to_json`
 
 
 def yaml_files(path, *, include_yml_extensions: bool = False):
     """."""
-    from directories import directory_file_names_matching
+    from democritus_file_system import directory_file_names_matching
 
     # TODO (oct 2020): in this example, we are potentially running the directory_file_names_matching function twice - I'm ok with this for now, but would like to consider caching results
 

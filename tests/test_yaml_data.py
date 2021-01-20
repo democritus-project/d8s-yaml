@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-
 import os
 
 import pytest
 
-from .yaml_data import yaml_read, is_yaml, yaml_write, yaml_sort, yaml_files, yaml_clean
-from directories import directory_delete, directory_create
-from files import file_write
+from democritus_yaml import yaml_read, is_yaml, yaml_write, yaml_sort, yaml_files, yaml_clean
+from democritus_file_system import directory_delete, directory_create, file_write
 
 NON_EXISTENT_FILE_PATH = './foo'
 TEST_DIRECTORY_PATH = './test_files'
