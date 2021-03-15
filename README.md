@@ -1,8 +1,8 @@
 # Democritus Yaml
 
-[![PyPI](https://img.shields.io/pypi/v/democritus-yaml.svg)](https://pypi.python.org/pypi/democritus-yaml)
-[![Build Status](https://travis-ci.com/democritus-project/democritus-yaml.svg?branch=master)](https://travis-ci.com/democritus-project/democritus-yaml)
-[![codecov](https://codecov.io/gh/democritus-project/democritus-yaml/branch/master/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/democritus-yaml)
+[![PyPI](https://img.shields.io/pypi/v/d8s-yaml.svg)](https://pypi.python.org/pypi/d8s-yaml)
+[![Build Status](https://travis-ci.com/democritus-project/d8s-yaml.svg?branch=main)](https://travis-ci.com/democritus-project/d8s-yaml)
+[![codecov](https://codecov.io/gh/democritus-project/d8s-yaml/branch/main/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/d8s-yaml)
 
 Democritus functions<sup>[1]</sup> for working with YAML.
 
