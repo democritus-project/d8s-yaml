@@ -3,7 +3,7 @@ import os
 import pytest
 
 from d8s_yaml import yaml_read, is_yaml, yaml_write, yaml_sort, yaml_files, yaml_clean
-from democritus_file_system import directory_delete, directory_create, file_write
+from d8s_file_system import directory_delete, directory_create, file_write
 
 NON_EXISTENT_FILE_PATH = './foo'
 TEST_DIRECTORY_PATH = './test_files'

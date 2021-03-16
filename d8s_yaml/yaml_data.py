@@ -7,7 +7,7 @@ Json = Union[List[Any], Dict[Any, Any], str]
 
 def yaml_files(path, *, include_yml_extensions: bool = False):
     """."""
-    from democritus_file_system import directory_file_names_matching
+    from d8s_file_system import directory_file_names_matching
 
     # TODO (oct 2020): in this example, we are potentially running the directory_file_names_matching function twice - I'm ok with this for now, but would like to consider caching results
 
