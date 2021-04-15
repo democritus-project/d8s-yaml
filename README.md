@@ -14,9 +14,36 @@ Democritus functions<sup>[1]</sup> for working with YAML.
 
 We use `d8s` as an abbreviation for `democritus` (you can read more about this [here](https://github.com/democritus-project/roadmap#what-is-d8s)).
 
-## Usage
+## Functions
 
-Coming soon...
+  - ```python
+    def yaml_files(path, *, include_yml_extensions: bool = False):
+        """."""
+    ```
+  - ```python
+    def yaml_read(yaml_data: str):
+        """."""
+    ```
+  - ```python
+    def is_yaml(possible_yaml_data: str) -> bool:
+        """."""
+    ```
+  - ```python
+    def yaml_write(data: Json, **kwargs) -> str:
+        """."""
+    ```
+  - ```python
+    def yaml_clean(yaml_data: str) -> str:
+        """Standardize the given yaml data."""
+    ```
+  - ```python
+    def yaml_standardize(yaml_data: str) -> str:
+        """Standardize the given yaml data by reading and writing it."""
+    ```
+  - ```python
+    def yaml_sort(yaml_data: str) -> str:
+        """."""
+    ```
 
 ## Development
 
