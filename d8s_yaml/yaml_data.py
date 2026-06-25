@@ -1,4 +1,4 @@
-from typing import List, Dict, Any, Union
+from typing import Any, Dict, List, Union
 
 Json = Union[List[Any], Dict[Any, Any], str]
 
@@ -9,13 +9,13 @@ def yaml_files(path, *, include_yml_extensions: bool = False):
     """."""
     from d8s_file_system import directory_file_names_matching
 
-    # TODO (oct 2020): in this example, we are potentially running the directory_file_names_matching function twice - I'm ok with this for now, but would like to consider caching results
+    # TODO (oct 2020): in this example, we are potentially running the directory_file_names_matching function twice - I'm ok with this for now, but would like to consider caching results  # noqa: E501
 
-    pattern = '*.yaml'
+    pattern = "*.yaml"
     files = directory_file_names_matching(path, pattern)
 
     if include_yml_extensions:
-        yml_pattern = '*.yml'
+        yml_pattern = "*.yml"
         files.extend(directory_file_names_matching(path, yml_pattern))
 
     return files
@@ -31,7 +31,7 @@ def yaml_read(yaml_data: str):
 def is_yaml(possible_yaml_data: str) -> bool:
     try:
         yaml_read(possible_yaml_data)
-    except:
+    except Exception:
         return False
     else:
         return True
